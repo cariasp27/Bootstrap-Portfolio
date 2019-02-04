@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors Part 2
+  </title>
+</head>
+
+<body>
+  <div class="main">
+      <center><table style="width:50%">
+      <tr>
+        <th>Score</th>
+        <th>CPU</th> 
+      </tr>
+      <tr>
+        <td><p id="scores"></p></td>
+        <td><p id="cpus"></p></td>
+        
+      </tr>
+    </table>
+  </center>
+  </div>
+
+  <div id="game">
+
+  </div>
+
+  <script type="text/javascript">
+
+    // Creates an array that lists out all of the options (Rock, Paper, or Scissors).
+    var computerChoices = ["r", "p", "s"];
+    var score = 0;
+    var cpu = 0;
+    // This function is run whenever the user presses a key.
+    
+    document.onkeyup = function(event) {
+
+      // Determines which key was pressed.
+      var userGuess = event.key;
+      
+
+      // Randomly chooses a choice from the options array. This is the Computer's guess.
+      var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+
+      // Alerts the key the user pressed (userGuess).
+      alert("User guess: " + userGuess);
+
+      // Alerts the Computer's guess.
+      alert("Computer guess: " + computerGuess);
+      
+      if(userGuess == "r" && computerGuess == "s" ) { alert("You Won!"); score++; }
+      else if(userGuess == "r" && computerGuess == "p") { alert("You lose!"); cpu++;}
+      else if(userGuess == "p" && computerGuess == "r" ) { alert("You Won!"); score++; }
+      else if(userGuess == "p" && computerGuess == "s") { alert("You lose!"); cpu++;}
+      else if(userGuess == "s" && computerGuess == "p" ) { alert("You Won!"); score++; }
+      else if(userGuess == "s" && computerGuess == "r") { alert("You lose!"); cpu++;}
+      else if(userGuess == "s" && computerGuess == "s" ) { alert("Draw");}
+      else if(userGuess == "r" && computerGuess == "r" ) { alert("Draw");}
+      else if(userGuess == "p" && computerGuess == "p" ) { alert("Draw");}
+      else (alert(done))
+      document.getElementById("scores").innerHTML = score;
+      document.getElementById("cpus").innerHTML = cpu;
+    };
+  </script>
+
+</body>
+
+</html>
