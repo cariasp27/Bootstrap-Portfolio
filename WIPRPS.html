@@ -10,6 +10,7 @@
 <body>
   <div class="main">
       <center><table style="width:50%">
+        
       <tr>
         <th>Score</th>
         <th>CPU</th> 
@@ -29,40 +30,56 @@
 
   <script type="text/javascript">
 
-    // Creates an array that lists out all of the options (Rock, Paper, or Scissors).
-    var computerChoices = ["r", "p", "s"];
-    var score = 0;
+    // Creates an array that lists out all of the words to be guessed.
+    var computerChoices = [
+      "pablo", "neon", "astro"
+    ]
     var cpu = 0;
+    // 
+    var gameintmain = {
+      score: 0,
+      ltdisplay: [],
+      ltused: [],
+    
+    }
+
+    
+   
+
     // This function is run whenever the user presses a key.
     
     document.onkeyup = function(event) {
 
       // Determines which key was pressed.
-      var userGuess = event.key;
-      
+      var userGuess = event.key
+     //----------------This is how you grab a word for guessing--------------
+    // Randomly chooses a choice from the options array. This is the new word to guess.
+    var wordToGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
-      // Randomly chooses a choice from the options array. This is the Computer's guess.
-      var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+    function charchecker (i) {if (userGuess === wordToGuess.charAt(i))
+      {
+        document.getElementById("cpus").innerHTML = userGuess + " = " + wordToGuess.charAt(i) ;}
 
-      // Alerts the key the user pressed (userGuess).
-      alert("User guess: " + userGuess);
 
-      // Alerts the Computer's guess.
-      alert("Computer guess: " + computerGuess);
-      
-      if(userGuess == "r" && computerGuess == "s" ) { alert("You Won!"); score++; }
-      else if(userGuess == "r" && computerGuess == "p") { alert("You lose!"); cpu++;}
-      else if(userGuess == "p" && computerGuess == "r" ) { alert("You Won!"); score++; }
-      else if(userGuess == "p" && computerGuess == "s") { alert("You lose!"); cpu++;}
-      else if(userGuess == "s" && computerGuess == "p" ) { alert("You Won!"); score++; }
-      else if(userGuess == "s" && computerGuess == "r") { alert("You lose!"); cpu++;}
-      else if(userGuess == "s" && computerGuess == "s" ) { alert("Draw");}
-      else if(userGuess == "r" && computerGuess == "r" ) { alert("Draw");}
-      else if(userGuess == "p" && computerGuess == "p" ) { alert("Draw");}
-      else (alert(done))
-      document.getElementById("scores").innerHTML = score;
-      document.getElementById("cpus").innerHTML = cpu;
-    };
+    for (i=0; i < wordToGuess.length; i++) 
+    {
+      if (userGuess === wordToGuess.charAt(0))
+      {
+        document.getElementById("cpus").innerHTML = userGuess + " = " + wordToGuess.charAt(0) ;}
+      //else if (userGuess === wordToGuess.charAt(1))
+     // {
+       // document.getElementById("cpus").innerHTML = userGuess + " = " + wordToGuess.charAt(1) ;}
+      //else (document.getElementById("cpus").innerHTML = "nope" )
+    }
+  }
+
+
+
+   // if (userGuess === wordToGuess.charAt(0))       {document.getElementById("cpus").innerHTML = "yuuuuuup " + ;}
+   // document.getElementById("scores").innerHTML = wordToGuess;
+   // }
+
+
   </script>
 
 </body>

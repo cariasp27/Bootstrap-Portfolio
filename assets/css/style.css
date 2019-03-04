@@ -1,0 +1,52 @@
+main  {
+    background-color: #FAFAFA;
+    border-radius: 25px;
+  }
+body  {
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/burried.png");
+    
+  }
+.bd-placeholder-img {
+font-size: 1.125rem;
+text-anchor: middle;
+}
+.card {
+    color: black;
+    float: left;
+    margin: 25px;
+}
+.fab {
+    color: #0077b5;
+}
+h3 {
+    color: white;
+}
+
+@media (min-width: 768px) {
+.bd-placeholder-img-lg {
+font-size: 3.5rem;
+}
+}
+.rower {
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.content {
+    background: url(../images/real_cf.png);
+    color: white;
+    border-radius: 15px;
+}
+.ql {
+}
+.text {
+    padding: 25px;
+}
+.pic {
+    border-radius: 10px;
+}
+.spartan {
+    margin: 25px;
+    height: 290px;
+    width: 250px;
+}
