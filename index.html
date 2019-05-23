@@ -1,78 +1,137 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v3.8.5">
-    <title>About Me</title>
-    
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <style>
-    @media screen and (max-width: 768px) {
-    .pic {
-        width: 200px;
-        height: auto;
-    }
-}
-    </style>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand" href="https://www.linkedin.com/in/paul-carias-9b12b3179/">Paul Carias</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>About Me</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <style>
 
-  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="portfolio.html">Portfolio</a>
-      </li>
-      <li class="nav-item">
+  </style>
+</head>
+
+<body>
+  <!-- I AM BAD AT NAVBARS -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="https://www.linkedin.com/in/paul-carias-9b12b3179/">Paul Carias</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+      aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="contact.html">Contact</a>
         </li>
-      
-    </ul>
-    
-  </div>
-</nav>
-<div class="row rower">
-  <div class="col-lg-9 content">
-    <div class="row">
-      <div class="col-lg-12">
-        <center><img class="pic" src="./assets/images/pablo.png" alt="nope"></center>
-        
-        <center><h1>About Me</h1></center>
-        <hr>
-      </div>
+      </ul>
+
     </div>
-    <div class="row">
-      <div class="col-lg-12 text">
+  </nav>
+  <div class="row rower">
+    <div class="col-lg-9 content">
+      <!-- HEADER -->
+      <div class="row">
+        <div class="col-lg-12" id="header">
+          <h1>About Me</h1>
+          <hr>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 text">
+          <!-- PAUL PIC W/ SPARTANS -->
+          <img class="pic" src="./assets/images/pablo.png" alt="nope">
           <p>
-              I was born and raised in the greater Cleveland Area by a mother who is a medical research assistant and a father who was a hardworking immigrant. From a young age I was instilled with the mindset to be thankful for anything I am given, because my dad was given nothing. Cherish what you do have, eat what is put in front of you. It is this mindset that has gotten me to where I am today. I view every opportunity as a blessing that I shan't turn down.
+            I was born and raised in the greater Cleveland Area by a mother who is a medical research assistant and a
+            father who was a hardworking immigrant. From a young age I was instilled with the mindset to be thankful for
+            anything I am given, because my dad was given nothing. Cherish what you do have, eat what is put in front of
+            you. It is this mindset that has gotten me to where I am today. I view every opportunity as a blessing that
+            I shan't turn down.
           </p>
           <p>
-                  Coming from a household where Telemundo soccer was watched and spanish was spoken I was involved in soccer and various other sports from a young age. This instilled a competitive spirit in me that I still carry with me to this day. I am relentless when it comes to achieving my goals and do not give up easily. That competitive spirit shone when I entered High School and joined a Lego Robotics Team. I was now showcasing my mental prowess instead of my physical abilities but the competitive edge remained. We worked in RobotC which is a C-based programing language and instantly I was hooked on problem solving and debugging code. Being able to see a physical problem in the real world on a robot, go back into the code and scour for errors, and see the solution come to fruition right before your eyes was extremely rewarding. I enjoyed the sense of accomplishment when i can stand back and look at what I created. This love for problem solving has fueled my drive to become a Web Developer.
+            Coming from a household where Telemundo soccer was watched and spanish was spoken I was involved in soccer
+            and various other sports from a young age. This instilled a competitive spirit in me that I still carry with
+            me to this day. I am relentless when it comes to achieving my goals and do not give up easily. That
+            competitive spirit shone when I entered High School and joined a Robotics Team.
           </p>
+          <div>
+            <!--ROBOTICS PIC AND LINK  -->
+            <img class="pict" src="./assets/images/Robotics.jpg" alt="FTC"
+              onclick="window.location.href='http://s.cleveland.com/cUfF1Ke'">
+            <p>
+              I was now showcasing my mental prowess instead of my physical abilities but the competitive edge remained.
+              We worked in RobotC which is a C-based programing language and instantly I was hooked on problem solving
+              and debugging code. Being able to see a physical problem in the real world on a robot, go back into the
+              code and scour for errors, and see the solution come to fruition right before your eyes was extremely
+              rewarding. I enjoyed the sense of accomplishment when I can stand back and look at what I created. This
+              love for problem solving has fueled my drive to become a Full Stack Web Developer.
+            </p>
+            <br>
+            <p>
+              I am currently enrolled in a MERN (Mongo Express React & Node) Full Stack Web Development Coding Bootcamp
+              at Case Western University but I am familiar with SQL Databases, C#, Object Oriented Programming and a
+              slurry of other languages.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
+    <div class="col-lg-3">
+      <!-- LINKED IN BUTTON AND LINK -->
+      <center><i class="fab fa-linkedin fa-10x" id="lnkd"
+          onclick="window.location.href='https://www.linkedin.com/in/paul-carias-9b12b3179/'"></i></center>
+      <div id="skill">
+        <h4>Skilled In...</h4>
+        <i class="fab fa-node fa-5x">
+          <!-- NODE ICON -->
+          <div class="hoverinfo">Node.js</div>
+        </i>
+        <!-- HTML ICON -->
+        <i class="fab fa-html5 fa-5x">
+          <div class="hoverinfo">HTML 5</div>
+        </i>
+        <!-- CSS ICON -->
+        <i class="fab fa-css3 fa-5x">
+          <div class="hoverinfo">CSS3</div>
+        </i>
+        <!-- JAVASCRIPT ICON -->
+        <i class="fab fa-js-square fa-5x">
+          <div class="hoverinfo">Javascript</div>
+        </i>
+        <!-- GITHUB ICON -->
+        <i class="fab fa-github-square fa-5x">
+          <div class="hoverinfo">Github</div>
+        </i>
+        <!-- SQL ICON -->
+        <img src="./assets/images/sqlcard.png" alt="sql" id="dolphin">
+        <div class="hoversql">SQL</div>
+
+      </div>
+      <!-- SPOTIFY IFRAME EMBED -->
+      <center>
+        <h3>My Favorite Playlist</h3>
+      </center>
+      <center><iframe src="https://open.spotify.com/embed/user/1226212460/playlist/0C0jvnNTSdU50bLfNPOJZt" width="300"
+          height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></center>
+    </div>
   </div>
-  <div class="col-lg-3 ql">
-    <center><i class="fab fa-linkedin fa-10x" onclick="window.location.href='https://www.linkedin.com/in/paul-carias-9b12b3179/'"></i></center>
-    <center><h3>My Favorite Playlist</h3></center>
-    <center><iframe src="https://open.spotify.com/embed/user/1226212460/playlist/0C0jvnNTSdU50bLfNPOJZt" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></center>
-  </div>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="assets/javascript/app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/javascript/app.js"></script>
+
 </html>

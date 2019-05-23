@@ -1,25 +1,72 @@
-main  {
-    background-color: #FAFAFA;
-    border-radius: 25px;
+/* MOBILE RESPONSIVNESS */
+@media screen and (max-width: 768px) {
+    .pic {
+      width: 200px;
+      height: auto;
+    }
   }
+/* BACKGROUND */
 body  {
-    background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/burried.png");
-    
+    background-image: url("../images/escheresque_ste.png");    
   }
-.bd-placeholder-img {
-font-size: 1.125rem;
-text-anchor: middle;
-}
-.card {
-    color: black;
+
+  
+/* CARD STYLING */
+.bapp {
     float: left;
-    margin: 25px;
+    text-align: center;
+    color: black;
+    margin-left: 25px;
+    margin-right: 10px;
+    margin-top: 10px;
+    height: 14rem;
+    width: 14rem;
 }
-.fab {
-    color: #0077b5;
+.papp {
+    float: right;
+    text-align: center;
+    color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    height: 14rem;
+    width: 14rem;
 }
+#cardholder {
+    background: url("../images/black_paper.png");
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 400px;
+    overflow: auto;
+}
+
+/* TEXT STYLING */
+.text {
+    padding: 25px;
+}
+
+
+/* HEADER STYLING */
 h3 {
     color: white;
+}
+h4 {
+    width: 100%;
+    color: white;
+    background-color: #343A40;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    height: 45px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+
+/* CONTAINER STYLING */
+#forms {
+    background-color: antiquewhite;
+    padding: 15px;
+    border-radius: 25px;
 }
 .rower {
     margin-top: 100px;
@@ -27,21 +74,77 @@ h3 {
     margin-right: 50px;
 }
 .content {
-    background: url(../images/real_cf.png);
+    background: url("../images/black_paper.png");
     color: white;
     border-radius: 15px;
+    margin: auto;
+    margin-top: 0;
 }
-.ql {
+#header {
+    background-color: #343A40;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 45px;
+    text-align: left;
 }
-.text {
-    padding: 25px;
+#skill {
+    background: url("../images/black_paper.png");
+    color: white;
+    text-align: center;
+    height: 300px;
+    margin: auto;
+    border-radius: 25px;
 }
+
+
+/* PICTURE STYLING */
 .pic {
-    width: 500px;
+    width: 400px;
     height: auto;
+    float: right;
 }
-.spartan {
-    margin: 25px;
-    height: 290px;
-    width: 250px;
+.pict {
+    width: 380px;
+    height:auto;
+    float: left;
+    margin: 10px;
+}
+.insta {
+    height: 15rem;
+    width: auto;
+    margin: 10px;
+}
+
+
+/* SKILL ICONS */
+#lnkd {
+    color: #0077b5;
+    margin-bottom: 25px;
+}
+#dolphin {
+    width: 25%;
+    margin-top: 5px;
+    vertical-align: top;
+}
+.fab {
+    margin-bottom: 25px;
+}
+.hoversql {
+    display: none;
+    font-size: 1rem;
+}
+#dolphin:hover > .hoversql {
+    display: block;
+}
+
+
+/* HOVER STYLING */
+.hoverinfo {
+    display: none;
+    z-index: 9;
+    font-size: 1rem;
+    position: sticky;
+}
+.fab:hover > .hoverinfo {
+    display: block;
 }

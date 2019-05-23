@@ -1,67 +1,154 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v3.8.5">
-    <title>Starter Template · Bootstrap</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-
-
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Paul's Portfolio</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
     <link href="./assets/css/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand" href="#">Paul Carias</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+</head>
 
-  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+<body>
+  <!-- I AM VERY BAD WITH NAVBARS -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Paul Carias</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#thenavbar"
+      aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="thenavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="portfolio.html">Portfolio</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
       </ul>
-      
-    
-  </div>
-</nav>
-<div class="row rower">
-  <div class="col-lg-12 content">
-      <div class="card" style="width: 18rem;" onclick="window.location.href='https://cariasp27.github.io/unit-4-game/'">
+
+
+    </div>
+  </nav>
+  <div class="row rower">
+    <!-- LEFT CONTAINER -->
+    <div class="col-lg-8 holder">
+        <div class="col-lg-12" id="header">
+            <h4>Basic Applications</h4>
+            <hr>
+          </div>
+        <div class="col-12-lg" id="cardholder">
+        <!-- BASIC JQUERY RPG -->
+        <div class="card bapp"  onclick="window.location.href='https://cariasp27.github.io/unit-4-game/'">
           <img class="card-img-top" src="./assets/images/winscreen.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Adventure Time RPG!</h5>
             <p class="card-text">Work in progress JQuery RPG</p>
-            
           </div>
         </div>
-        <div class="card" style="width: 18rem;" onclick="window.location.href='https://cariasp27.github.io/TriviaGame/'">
+        <!-- RICK & MORTY TRIVIA GAME -->
+        <div class="card bapp" onclick="window.location.href='https://cariasp27.github.io/TriviaGame/'">
           <img class="card-img-top" src="./assets/images/crazyrick.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Rick & Morty Trivia</h5>
             <p class="card-text">Work in progress Trivia Game</p>
+          </div>
         </div>
-        </div>
-        <div class="card" style="width: 18rem;" onclick="window.location.href='https://cariasp27.github.io/Giftastic/'">
+        <!-- GIF API DEMO -->
+        <div class="card bapp" onclick="window.location.href='https://cariasp27.github.io/Giftastic/'">
           <img class="card-img-top" src="./assets/images/lawls.gif" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Giftastic</h5>
-            <p class="card-text">API usage</p>
+            <p class="card-text">Application demonstrating external API usage</p>
+          </div>
         </div>
+        <!-- LIRI -->
+        <div class="card bapp" onclick="window.location.href='https://github.com/cariasp27/L.I.R.I'">
+          <img class="card-img-top" src="./assets/images/LIRI.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">L.I.R.I.</h5>
+            <p class="card-text">Language Interpretation & Recognition Interface: CLI App demonstrating API usage</p>
+          </div>
         </div>
+        <!-- TRAIN SCHEDULER -->
+        <div class="card bapp" onclick="window.location.href='https://cariasp27.github.io/iliketrain/'">
+          <img class="card-img-top" src="./assets/images/lawls.gif" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Train Scheduler</h5>
+            <p class="card-text">Application utilizing Moment.js and Firebase </p>
+          </div>
+        </div>
+          <!-- BAMAZON -->
+          <div class="card bapp" onclick="window.location.href='https://github.com/cariasp27/Bamazon'">
+            <img class="card-img-top" src="./assets/images/LIRI.jpeg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Bamazon</h5>
+              <p class="card-text">CLI Marketplace Application utilizing mySQL</p>
+            </div>
+          </div>
+        <!-- FRIEND FINDER -->
+        <div class="card bapp" onclick="window.location.href='https://github.com/cariasp27/FriendFinder'">
+          <img class="card-img-top" src="./assets/images/lawls.gif" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Friend Finder</h5>
+            <p class="card-text">Full Stack Compatibility App</p>
+          </div>
+        </div>
+        <!-- BURGER TIME -->
+        <div class="card bapp" onclick="window.location.href='https://polar-wave-14021.herokuapp.com/'">
+          <img class="card-img-top" src="./assets/images/lawls.gif" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Burger Time</h5>
+            <p class="card-text">Fullstack Burger App</p>
+          </div>
+        </div>
+      <!-- END OF LEFT CONTAINER -->
+      </div>
+    </div>
+    <div class="col-sm-1"></div>
 
-    </body>
-    </html>
+
+    <!-- RIGHT CONTAINER -->
+    <div class="col-md-3 holder">
+        <div class="col-lg-12" id="header">
+            <h4>Projects</h4>
+            <hr>
+          </div>
+          <div class="col-lg-12" id="cardholder">
+        <!-- CONCERT HUB APP -->
+        <div class="card papp" onclick="window.location.href=''">
+          <img class="card-img-top" src="./assets/images/lawls.gif" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Mosh Pitt</h5>
+            <p class="card-text">Project</p>
+          </div>
+        </div>
+        <!-- MEAL JOURNAL DIARY -->
+        <div class="card papp" onclick="window.location.href=''">
+          <img class="card-img-top" src="./assets/images/LIRI.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Munch Much</h5>
+            <p class="card-text">Full Stack Meal Journal App</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- END OF RIGHT CONTAINER -->
+  </div>
+
+
+</body>
+
+</html>
