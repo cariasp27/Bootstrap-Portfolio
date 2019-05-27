@@ -1,9 +1,4 @@
-/* MOBILE RESPONSIVNESS */
-@media screen and (max-width: 768px) {
-    .pic {
-      width: 50px;
-    }
-  }
+
 /* BACKGROUND */
 body  {
     background-image: url("../images/escheresque_ste.png");    
@@ -147,3 +142,12 @@ h4 {
 .fab:hover > .hoverinfo {
     display: block;
 }
+/* MOBILE RESPONSIVNESS */
+@media screen and (max-width: 768px) {
+    .pic {
+      width: 330px;
+    }
+    .pict {
+        width: 320px;
+    }
+  }
